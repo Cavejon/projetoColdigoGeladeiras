@@ -1,0 +1,28 @@
+function validaFaleConosco() {
+	if (document.frmfaleconosco.txtnome) {
+		alert("Preencha o campo Nome.");
+		document.frmfaleconosco.txtnome.focus();
+	} else {
+		if (document.frmfaleconosco.txtfone) {
+			alert("Preencha o campo telefone.");
+			document.frmfaleconosco.txtfone.focus();
+		} else {
+			if (document.frmfaleconosco.txtemail) {
+				alert("Preencha o campo email.");
+				document.frmfaleconosco.txtemail.focus();
+			} else {
+				if (document.frmfaleconosco.selmotivo) {
+					alert("Preencha o campo motivo.");
+					document.frmfaleconosco.selmotivo.focus();
+				} else {
+					if (document.frmfaleconosco.txacomentario) {
+						alert("Preencha o campo comentario.");
+						document.frmfaleconosco.txacomentario.focus();
+					}
+					return false;
+				}
+			}
+		}
+	}
+	return true;
+} 

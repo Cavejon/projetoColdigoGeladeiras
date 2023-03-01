@@ -1,0 +1,28 @@
+function validaFaleConosco() {
+	if (document.frmfaleconosco.txtnome.value < 1) {
+		alert("Preencha o campo Nome.");
+		document.frmfaleconosco.txtnome.focus();
+	} else {
+		if (document.frmfaleconosco.txtnome.value < 1) {
+			alert("Preencha o campo Nome.");
+			document.frmfaleconosco.txtnome.focus();
+		} else {
+			if (document.frmfaleconosco.txtnome.value < 1) {
+				alert("Preencha o campo Nome.");
+				document.frmfaleconosco.txtnome.focus();
+			} else {
+				if (document.frmfaleconosco.txtnome.value < 1) {
+					alert("Preencha o campo Nome.");
+					document.frmfaleconosco.txtnome.focus();
+				} else {
+					if (document.frmfaleconosco.txtnome.value < 1) {
+						alert("Preencha o campo Nome.");
+						document.frmfaleconosco.txtnome.focus();
+					}
+					return false;
+				}
+				return true;
+			}
+		}
+	}
+}

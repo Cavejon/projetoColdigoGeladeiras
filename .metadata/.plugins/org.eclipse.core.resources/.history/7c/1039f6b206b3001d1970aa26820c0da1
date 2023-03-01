@@ -1,0 +1,37 @@
+function validaFaleConosco() {
+	if (document.frmfaleconosco.txtnome.value < 1) {
+		alert("Preencha o campo Nome.");
+		document.frmfaleconosco.txtnome.focus();
+	} else {
+		if (document.frmfaleconosco.txtfone.value < 1) {
+			alert("Preencha o campo telefone.");
+			document.frmfaleconosco.txtfone.focus();
+		} else {
+			if (document.frmfaleconosco.txtemail.value < 1) {
+				alert("Preencha o campo email.");
+				document.frmfaleconosco.txtemail.focus();
+			} else {
+				if (document.frmfaleconosco.selmotivo.value < 1) {
+					alert("Preencha o campo motivo.");
+					document.frmfaleconosco.selmotivo.focus();
+				} else {
+					if (document.frmfaleconosco.txacomentario.value < 1) {
+						alert("Preencha o campo comentario.");
+						document.frmfaleconosco.txacomentario.focus();
+					}
+					return false;
+				}
+			}
+		}
+	}
+	return true;
+} 
+
+function verificaMotivo(motivo){
+	var elemento = document.getElementById("opcaoProduto");
+	
+	if(motivo=="PR"){
+		var select = document.createElement("select");
+		select.setAttribute("name","selproduto")
+	}
+}
